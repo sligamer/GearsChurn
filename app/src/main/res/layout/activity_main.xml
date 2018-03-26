@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lab55.sligamer.gearschurn.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView_smGear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/gear_small"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_lgGear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/gear1" />
+
+    <ImageView
+        android:id="@+id/imageView_lgGear"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="128dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/gear_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/gear2" />
+
+    <Button
+        android:id="@+id/gearbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:onClick="animateGears"
+        android:text="@string/rotate_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_lgGear" />
+</android.support.constraint.ConstraintLayout>
